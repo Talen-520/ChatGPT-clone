@@ -1,4 +1,6 @@
 import {useState,useEffect} from 'react' //save response from react
+import mao from './img/mao.png'
+import elon from './img/elon.png'
 const App = () => {
     const [value,setValue] = useState(null)
     const[message,setMessage] = useState(null)
@@ -53,7 +55,7 @@ const App = () => {
                     },
                     {
                         title:currentTitle,
-                        role:"AI assistant",
+                        role:"AI Elon",
                         content: message.content
 
                     }
@@ -82,6 +84,7 @@ const App = () => {
           {!currentTitle && <h1>TaoGPT</h1>}
           <ul className="feed">
               {currentChat?.map((chatMessage,index)=><li key = {index}>
+                  <img src={chatMessage.role === 'user' ? mao : elon} alt={chatMessage.role} className="chat-icon" />
                   <p className="role">{chatMessage.role}</p>
                   <p>{chatMessage.content}</p>
               </li>)}

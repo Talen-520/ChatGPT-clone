@@ -131,3 +131,10 @@ input:focus{
 ::-webkit-scrollbar {
     display: none;
 }
+
+.chat-icon {
+    height: 34px;
+    width: 44px;
+    display: flex;
+    padding: 10px;
+}
