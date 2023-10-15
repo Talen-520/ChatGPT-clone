@@ -1,4 +1,6 @@
+Django version:
 
+https://github.com/Talen-520/GPT3.5-Django-WebUI
 
 
 https://github.com/Talen-520/chatGPT-clone/assets/63370853/fc1e138f-cabe-4d82-bb40-2ba442dd1efe
